@@ -4,9 +4,9 @@ import java.util.List;
 /**
  * This abstract class defines the basic attributes and behaviours that all Virtual Agents should have.
  * 
- * @author Mr. Rao
+ * @author Dennis Kaydalov
  * 
- * @version October 27, 2022
+ * @version November 8, 2022
  */
 public abstract class VirtualAgent {
 
@@ -17,15 +17,14 @@ public abstract class VirtualAgent {
      * 
      * @param name The initial String value for the "name" attribute
      */
-    //public VirtualAgent (String name) {
-    //    setName(name);
-    //}
-    //TODO: CHECK DEFAULT CODE< THIS IS PROBABLY NOT RIGHT.
-    public VirtualAgent () {
+    public VirtualAgent (String name) {
+        setName(name);
     }
 
     /**
      * Accessor to return the value if the "name" attribute as a String
+     *
+     * @return String - The name
      */
     public String getName() {
         return name;
